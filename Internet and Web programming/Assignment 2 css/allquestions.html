@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment</title>
+</head>
+<link rel="stylesheet" href="test.css">
+
+<body>
+    <h1>Q1) What is CSS and its advantages</h1>
+    <p>
+        CSS (Cascading Style Sheets) describes how HTML elements are to be displayed on web page or in other media.<br>
+        CSS saves a lot of work.
+        It can control the webpages layout all at a once and positioning of each HTML element defined in webpage.<br>
+        CSS can be applied in three types. They are
+        <br>
+        a)inline CSS<br>
+        b)Internal CSS<br>
+        c)External CSS <br>
+    </p>
+    <h4>Advantages Of CSS</h4>
+    <p>
+        1)The layout of webpage is better controlled<br>
+        2)Style (CSS) kept seperate from (HTML)<br>
+        3)Reduced file size means reduced bandwidth, which means faster loading time<br>
+    </p>
+    <b>
+        <hr>
+    </b>
+    <h1>Q2) What are the Components of a CSS Style?</h1>
+    <p>
+        <b>The Components are :</b><br>
+    <p>
+        1) Easily maintainable<br>
+        2) CSS in time-saving<br>
+        3) Superior styles to the native front<br>
+        4) Ease with Search Engines<br>
+        5) Efficient cache storing<br>
+    </p>
+    </p>
+    <b>
+        <hr>
+    </b>
+    <h1>Q3) What is the Cascading order in CSS</h1>
+    <p>
+        High-------------------------------------------------------------------------------------------------->Low<br>
+        User==>Inline==>Media==>!Importance==>Specificity==>Order==>Inherited==>Inherent
+    </p>
+    <b>
+        <hr>
+    </b>
+    <h1>Q4) What is "box model" in CSS?</h1>
+    <p>
+        In CSS, the term "box model" is used for design and layout<br><br>
+        The CSS box model is essentially a box that wraps around every HTML element.<br>It consists of : margins,
+        borders, padding, and the actual content.<br>The below image illustrates the box model:
+    </p>
+
+    <img class="boxim" src="https://qph.cf2.quoracdn.net/main-qimg-4513d487063066f506364c1595cf4d17">
+    <h4>Explanation for box model</h4>
+    <p>
+        <b>Content </b>- The content of the box, where text and images appear<br>
+        <b>Padding </b>- Clears an area around the content. The padding is transparent<br>
+        <b>Border </b>- A border that goes around the padding and content<br>
+        <b>Margin </b>- Clears an area outside the border. The margin is transparent.
+    </p>
+    <b>
+        <hr>
+    </b>
+    <h1>Q5) How do you control the visibility of an element in CSS?</h1>
+    <p>
+        <b>Visibility property </b>is used to specify whether an element is visible or not in a web document,
+        but thevhidden elements take up space in the web document.<br>
+        You can set the visibility property of an element in CSS using the same Visible property<br>
+        Though visibility property, we can make elements like images, text, boxes, etc.<br>
+        <b>visible </b>to pur naked eye, or you can even <b>hide. </b>To hide table elements you can use
+        <b>collapse.</b><br><br>
+        <b>Syntax :</b><br>
+        visibility: visible | hidden | collapse | initial | inherit;<br>
+    </p>
+    <b>
+        <hr>
+    </b>
+    <h1>Q6) Exemplify type selector, universal selector, Descendant Selector, class selector, id selector, child
+        selector, attribute selector</h1>
+    <table>
+        <tr>
+            <th>Pattern</th>
+            <th>Meaning</th>
+            <th>Described in section</th>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Matches any element</td>
+            <td>Universal selector</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>Matches any E element.</td>
+            <td>Type selectors</td>
+        </tr>
+        <tr>
+            <td>A B</td>
+            <td>Matches any B element that is a descendant of an A element.</td>
+            <td>Descendant selectors</td>
+        </tr>
+        <tr>
+            <td>A > B</td>
+            <td>Matches any B element that is a child of an element A.</td>
+            <td>Child selectors</td>
+        </tr>
+        <tr>
+            <td>A:first-child</td>The
+            <td>Matches element A when A is the first child of some other element</td>
+            <td>The:first-child pseudo-class</td>
+        </tr>
+        <tr>
+            <td>E + F</td>
+            <td>Matches any F element immediately preceded by an element E</td>
+            <td>Adjacent selectors</td>
+        </tr>
+        <tr>
+            <td>E[foo]</td>
+            <td>Matches any E element with the "foo" attribute set (whatever the value)</td>
+            <td>Attribute selectors</td>
+        </tr>
+        <td>E[foo="warning"]</td>
+        <td>Matches any E element whose "foo" attribute value is exactly equal to "warning"</td>
+        <td>Attribute selectors</td>
+        <tr>
+            <td>E[foo~="warning"]</td>
+            <td>Matches any E element whose "foo" attribute value is a list of space-separated of values, one of which
+                is exactly equal to "warning"</td>
+            <td>Attribute selectors</td>
+        </tr>
+        <tr>
+            <td>DIV.warning</td>
+            <td>HTML only. The same as DIV[class~="warning"].</td>
+            <td>The "class" attribute in HTML</td>
+        </tr>
+        <tr>
+            <td>E#myid</td>
+            <td>Matches any E element with the "id" attribute equal to "myid"</td>
+            <td>ID selectors</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+    <div class="q7">
+        <h1>Q7) What is the purpose of following measurement unit?</h1>
+        <table>
+            <tr>
+                <th>Unit</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Relative to the parent element</td>
+            </tr>
+            <tr>
+                <td>cm</td>
+                <td>centimeters</td>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
+            </tr>
+            <tr>
+                <td>ex</td>
+                <td>Relative to the x-height of the current font (rarely used)</td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td>inches (1in = 96px = 2.54cm)</td>
+            </tr>
+            <tr>
+                <td>mm</td>
+                <td>millimeters</td>
+            </tr>
+            <tr>
+                <td>pc</td>
+                <td>picas (1pc = 12 pt)</td>
+            </tr>
+            <tr>
+                <td>pt</td>
+                <td>points (1pt = 1/72 of 1in)</td>
+            </tr>
+            <tr>
+                <td>px *</td>
+                <td>pixels (1px = 1/96th of 1in)</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td>Relative to 1% of the height of the viewport*</td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td>Relative to 1% of the width of the viewport*</td>
+            </tr>
+            <tr>
+                <td>vmin</td>
+                <td>Relative to 1% of viewport's* smaller dimension</td>
+            </tr>
+        </table>
+    </div>
+    <div class="q8m">
+        <h1>Q8) Which property is used for </h1>
+        <div class="q8bg">
+            <h3>Set the background color of an element</h3>
+            <p>background-color:Color name /value (rgb)</p>
+        </div>
+        <div class="q8bgimg">
+
+            <h4>(b)set the background image of an element?</h4>
+            <p>The <b>background-image </b>CSS property sets one or more background images on an element.
+            </p>
+        </div>
+        <h4>(c)control the repetition of an image in the background?</h4>
+        <p>
+            The <b>background-repeat</b>property sets if/how a background image will be repeated.
+
+        </p>
+        <h4>(d)control the position of an image in the background?</h4>
+        <p>
+            The <b>background-position</b> property sets the starting position of a background image.
+        </p>
+        <h4>(e)control the scrolling of an image in the background?</h4>
+        <p>The <b>background-attachment</b> property sets whether a background image scrolls with the rest of the page,
+            or is fixed.</p>
+        <hr>
+    </div>
+
+    <hr>
+    <div class="q9">
+        <h1>Q9) Which property is used to</h1>
+        <h4>(a) change the face of a font?</h4>
+        <p>The font-family property is used to change the face of a font.</p>
+        <h4>(b) make a font italic or oblique?</h4>
+        <p>The font-style CSS property sets whether a font should be styled with a normal, italic, or oblique face from
+            its font-family </p>
+        <h4>(c) create a small-caps effect?</h4>
+        <p>The font-variant property specifies whether or not a text should be displayed in a small-caps font.</p>
+        <h4>(d) increase or decrease how bold or light a font appears?</h4>
+        <p>The font-weight property is used to increase or decrease how bold or light a font appears.</p>
+        <h4>(e) increase or decrease the size of a font?</h4>
+        <p>The font-size property is used to increase or decrease the font size. The font-size property is used to
+            control the size of fonts. </p>
+        <h4>(f) set the color of a text?</h4>
+        <P>The color property is used to set the color of the text. The color is specified by: a color name - like "red"
+        </P>
+        <h4>(g) set the text direction?</h4>
+        <p>The direction CSS property sets the direction of text, table columns, and horizontal overflow. Use rtl for
+            languages written from right to left (like Hebrew or Arabic), and ltr for those written from left to right
+            (like English and most other languages).</p>
+        <h4>(h) add or subtract space between the letters that make up a word?</h4>
+        <p>To add or subtract space between the letters that make up a word, use the letter-spacing property.</p>
+        <h4>(i) add or subtract space between the words of a sentence?</h4>
+        <p>The word-spacing property is used to add or subtract space between the words of a sentence. Possible values
+            are normal or a number specifying space.</p>
+        <h4>(j) indent the text of a paragraph?</h4>
+        <p>The text-indent property in CSS is used to define the indentation of the first line in each block of text. It
+            also takes negative values. It means if the value is negative then the first line will be indented to the
+            left.</p>
+        <h4>(k) align the text of a document?</h4>
+        <p>The text-align property is used to set the horizontal alignment of a text. A text can be left or right
+            aligned, centered, or justified.</p>
+        <h4>(l) underline, overline, and strikethrough text?</h4>
+        <p>The text-decoration property adds an underline, overline, line-through, or a combination of lines to selected
+            text.</p>
+        <h4>(m) capitalize text or convert text to uppercase or lowercase letters?</h4>
+        <p>
+            The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text
+            appear in all-uppercase or all-lowercase, or with each word capitalized.</p>
+        <h4>(n) control the flow and formatting of text?</h4>
+        <p>The white-space property is used to control the flow and formatting of text.</p>
+        <h4>(o) set the text shadow around a text?</h4>
+        <p>The text-shadow CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied
+            to the text and any of its decorations .</p>
+        <h4>(p) set the width of an image border?</h4>
+        <p>The border-image-width CSS property sets the width of an element's border image.</p>
+        <h4>(q) set the height of an image?</h4>
+        <p>The <img> height attribute is used to set the height of the image in pixels.</p>
+        <h4>(r) set the width of an image?
+        </h4>
+        <p>The border-image-width CSS property sets the width of an element's border image.</p>
+        <h4>(s) set the opacity of an image?</h4>
+        <p>To set the opacity of an image, use the CSS -moz-opacity property.</p>
+        <hr>
+    </div>
+    <div class="q10">
+        <h1>Q10) Which property of a hyperlink signifies</h1>
+        <h4>(a) unvisited hyperlinks and visited hyperlinks?</h4>
+        <p>The :visited signifies unvisited hyperlinks.</p>
+        <h4>(b) an element that currently has the user's mouse pointer hovering over
+            it?
+        </h4>
+        <P>The :hover signifies an element that currently has the user's mouse pointer hovering over it.</P>
+        <h4>(c) an element on which the user is currently clicking?
+        </h4>
+        <p>The :active signifies an element on which the user is currently clicking.</p>
+        <hr>
+    </div>
+    <hr>
+    <hr>
+    <div class="q11">
+        <h1>Q11) Which property of a table</h1>
+        <h4>(a) specifies whether the browser should control the appearance of the
+            adjacent borders?</h4>
+        <p>The border-collapse specifies whether the browser should control the appearance of the adjacent borders that
+            touch each other or whether each cell should maintain its style.</p>
+        <h4>(b) specifies the width that should appear between table cells?</h4>
+        <p>The border-spacing specifies the width that should appear between table cells.</p>
+        <h4>(c) specifies whether the border should be shown if a cell is empty?</h4>
+        <p>The empty-cells property sets whether or not to display borders on empty cells in a table. Note: This
+            property has no effect if border-collapse is "collapse".</p>
+        <h4>(d) controls the placement of the table caption?</h4>
+        <p>The caption-side property specifies the placement of a table caption.</p>
+        <hr>
+    </div>
+    <hr>
+    <div class="q12">
+        <h1>Q12) Which property specifies</h1>
+        <h4>(a) the color of a border?</h4>
+        <p>The border-color shorthand CSS property sets the color of an element's border.</p>
+        <h4>(b) whether a border should be solid, dashed line, double line, or one of
+            the other possible values?</h4>
+        <p>The border-style specifies whether a border should be solid, dashed line, double line, or one of the other
+            possible values.</p>
+        <h4>(c) the width of a border</h4>
+        <p>The border-width property specifies the width of the four borders.</p>
+        <h4>(d) a shorthand property for setting the margin properties in one declaration?</h4>
+        <p>The margin property sets the margins for an element, and is a shorthand property for the following
+            properties: margin-top. margin-right. margin-bottom.</p>
+        <h4>(e) the bottom margin of an element?</h4>
+        <p>The margin-bottom property sets the bottom margin of an element. Note: Negative values are allowed.</p>
+        <h4>(f) the top margin of an element?</h4>
+        <p>margin-top property, which sets the top margin of an element. This property accepts an integer value. The
+            default value is 0 and negative values are also allowed.</p>
+        <h4>(g) the left margin of an element?</h4>
+        <p>The margin-left property sets the left margin of an element.</p>
+        <h4>(h) the right margin of an element?
+        </h4>
+        <p>The margin-right property in CSS is used to set the right margin of an element. It sets the margin-area on
+            the right side of the element. Negative values are also allowed. The default value of the margin-right
+            property is zero.</p>
+        <hr>
+    </div>
+    <div class="q13">
+        <h1>Q13) Which property specifies</h1>
+        <h4>(a) whether a long point that wraps to a second line should align with
+            the first line or start underneath the start of the marker of a list?
+        </h4>
+        <p>The list-style-position specifies whether a long point that wraps to a second line should align with the
+            first line or start underneath the start of the marker.</p>
+        <h4>(b) an image rather than a bullet point or number for the marker of a
+            list?</h4>
+        <p>The list-style-image specifies an image for the marker rather than a bullet point or number. The list-style
+            serves as shorthand for the preceding properties.</p>
+        <h4>(c) the distance between a marker and the text in the list?</h4>
+        <p>The marker-offset specifies the distance between a marker and the text in the list.</p>
+        <h4>(d) the bottom padding of an element?</h4>
+        <p>The padding-bottom property sets the bottom padding (space) of an element.</p>
+        <h4>(e) the top padding of an element?</h4>
+        <p>The padding-top property sets the top padding (space) of an element. Note: Negative values are not allowed.
+        </p>
+        <h4>(f) the left padding of an element?</h4>
+        <p>The padding-left CSS property sets the width of the padding area to the left of an element.</p>
+        <h4>(g) the right padding of an element?</h4>
+        <p>The padding-right property sets the right padding (space) of an element. Note: Negative values are not
+            allowed.</p>
+        <hr>
+    </div>
+    <div class="q14">
+        <h1>Q14) Which value of cursor property</h1>
+        <h4>(a)Changes the cursor based on context area it is over?</h4>
+        <p>cursor property is used</p>
+        <h4>(b)changes the cursor to a crosshair or plus sign</h4>
+        <p>
+            cursor: crosshair;<br>
+            Cross cursor, often used to indicate selection in a bitmap.
+        </p>
+        <h4>(c)changes the cursor to an arrow</h4>
+        <p>
+            default wide arrow pointing up and to the left<br>The platform-dependent default cursor. Typically an arrow.
+        </p>
+        <h4>(d)changes the cursor to a pointer</h4>
+        <p>
+            The cursor is a pointer that indicates a link.<br> Typically an image of a pointing hand.
+        </p>
+        <h4>(e)changes the cursor to the 'I' bar</h4>
+        <p>
+            text <br> vertical i-beam The text can be selected. Typically the shape of an I-beam.
+        </p>
+        <h4>(f)changes the cursor to an houe glass</h4>
+        <p>
+            The program is busy, and the user can't interact with the interface (in contrast to progress).<br>Sometimes
+            an image of an hourglass or a watch.
+        </p>
+        <h4>(g) changes the cursor to a quetion mark</h4>
+        <p>
+            help<br>
+            wide arrow pointing up and to the left next to a question mark Help information is available.
+        </p>
+    </div>
+    <div class="q15">
+        <h1>Q15) Which property is used to set</h1>
+        <h4>(a)The width of the outline?</h4>
+        <p>
+            The outline-width property specifies the width of the outline, and can have one of the following values:<br>
+
+            thin (typically 1px)<br>
+            medium (typically 3px)<br>
+            thick (typically 5px)<br>
+            A specific size (in px, pt, cm, em, etc)<br>
+        </p>
+        <p>
+            outline-style: solid;
+            outline-color: red;
+            outline-width: thin;
+        </p>
+        <h4>(b) set the line style for the outline?</h4>
+        <p>The outline-style property is used to set the line style for the outline. The outline-color property is used to set the color of the outline.</p>
+        <h4>(c) set the color of the outline?</h4>
+        <p>The outline-color CSS property sets the color of an element's outline.</p>
+        <h4>(d) set all the outlining properties in a single statement?</h4>
+        <P>The outline CSS shorthand property sets most of the outline properties in a single declaration.</P>
+        <h4>(e) set the height of a box?</h4>
+        <P>The height and width properties are used to set the height and width of an element. The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.</P>
+        <h4>(f) set the width of a box?</h4>
+        <p>The 'border' property is a shorthand property for setting the same width, color, and style for all four borders of a box.</p><hr>
+    </div>
+    
+</body>
+
+</html>
