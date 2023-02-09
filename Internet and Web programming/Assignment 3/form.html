@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <style>
+        .maindiv{
+            height:700px;
+            width:1000px;
+            background-color: salmon;
+            margin-left: 300px;
+            border-radius: 20px;
+            align-items: center;
+        }
+        .bt{
+            height:50px;
+            width:100px;
+            background-color: red;
+            margin-left:100px;
+            border-radius: 10px;
+        }
+        .formdiv{
+            height:400px;
+            width:400px;
+            margin-left: 300px;
+            border-radius: 10px;
+            align-items: center;
+        }
+        h1{
+            margin-left:60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="formdiv">
+            <form>
+                <h1>Web Form</h1>
+                Enter Name : <input type="text" placeholder="Full Name"><br><br>
+                Enter Username : <input type="text" placeholder="Username"><br><br>
+                Hidden Field : <input type="hidden" name="identity" value="John Smith"><br><br>
+                Registration Number : <input type="text" name="idNumber"><br><br>
+                <marquee> Comments :<textarea rows="5" cols="30" name="text" placeholder="Enter text"></textarea></marquee><br><br>
+                830 TT:<input type="radio" name="lab" value="Lab101">
+                1030 TT:<input type="radio" name="lab" value="Lab102">
+                1430 WF:<input type="radio" name="lab" value="Lab103"><br><br>
+                Course :<select value="app" name="app">
+                    <option>Select Courses</option>
+                    <option>Word</option>
+                    <option>Excel</option>
+                    <option>HTML</option>
+                </select><br><br>
+                Windows :<input type="checkbox" name="win" value="Yes"><br>
+                Linux :<input type="checkbox" name="unix" value="Yes"><br>
+                <button class="bt1">Submit</button>
+                </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

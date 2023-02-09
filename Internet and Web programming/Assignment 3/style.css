@@ -1,0 +1,29 @@
+.con1{
+    background-color:yellowgreen;
+    height:330px;
+    width:700px;
+    border-radius: 10px;
+    margin-left:200px;
+  }
+  img{
+    margin-left:240px;
+    height:200px;
+    width:200px;
+    border-radius: 10px;
+  }
+  .hh2{
+    margin-left:250px;
+  }
+  .hh1{
+    margin-left:250px;
+  }
+  .sites{
+    background-color: darkkhaki;
+   text-align: center;
+  }
+  .skills{
+    text-align: center;
+  }
+  table,th,td{
+    border:2px solid green;
+  }
